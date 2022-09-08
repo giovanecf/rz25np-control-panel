@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RZ25N/P Control Panel</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h3>SNC-RZ25N/P<br />Control Panel</h3>
+
+        <ul class="nav-list">
+          <li>
+            <a href="" class="nav-link add-cam"
+              ><img src="./img/add.svg" alt="" /> ADD CAM</a
+            >
+          </li>
+          <li>
+            <a href="" class="nav-link"
+              ><img src="./img/config.svg" alt="Config link"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="content-row">
+          <div class="content-row-right">
+            <h4 align="center">Speed Moviment</h4>
+          </div>
+
+          <div class="content-row-center">
+            <div class="image-viewer">
+              <img src="./img/nosignal.jpg" alt="Cam viewer" />
+            </div>
+            <div class="main-controls">
+              <div class="pre-positions">
+                <h4>Pre-positions</h4>
+                <div class="pre-positions-buttons">
+                  <div>
+                    <button type="button">P.P 1</button>
+                    <button type="button">P.P 2</button>
+                    <button type="button">P.P 3</button>
+                  </div>
+                  <div>
+                    <button type="button">P.P 4</button>
+                    <button type="button">P.P 5</button>
+                    <button type="button">P.P 6</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tilt-control">
+                <h4>Tilt Control</h4>
+                <div class="tilt-buttons">
+                  <div><button type="button"><</button></div>
+                  <div>
+                    <button type="button">/\</button
+                    ><button type="button">\/</button>
+                  </div>
+                  <div><button type="button">></button></div>
+                </div>
+              </div>
+              <div class="zoom-control">
+                <h4>Zoom Control</h4>
+                <div class="zoom-buttons">
+                  <button type="button">
+                    <img src="./img/add.svg" alt="" />
+                  </button>
+                  <button type="button">
+                    <img src="./img/minus.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-row-left"><h4 align="center">Links</h4></div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>SNC-RZ25N/P | 2022</p>
+      </div>
+    </div>
+    <script src="./js/axios.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
