@@ -22,7 +22,7 @@
         <ul class="nav-list">
           <li>
             <a href="" class="nav-link add-cam"
-              ><img src="./img/add.svg" alt="" /> ADD CAM</a
+              ><img src="./img/add_green.svg" alt="" /> ADD CAM</a
             >
           </li>
           <li>
@@ -35,8 +35,31 @@
 
       <div class="content">
         <div class="content-row">
-          <div class="content-row-right">
-            <h4 align="center">Speed Moviment</h4>
+          <div class="content-row-left">
+            <h4>SPEED CONTROL</h4>
+            <br />
+            <div class="measure-group">
+              <div class="measure">
+                <h5>Movement Speed</h5>
+                <input
+                  type="range"
+                  orient="vertical"
+                  min="1"
+                  max="100"
+                  value="10"
+                />
+              </div>
+              <div class="measure">
+                <h5>Zoom Speed</h5>
+                <input
+                  type="range"
+                  orient="vertical"
+                  min="1"
+                  max="100"
+                  value="10"
+                />
+              </div>
+            </div>
           </div>
 
           <div class="content-row-center">
@@ -62,28 +85,48 @@
               <div class="tilt-control">
                 <h4>Tilt Control</h4>
                 <div class="tilt-buttons">
-                  <div><button type="button"><</button></div>
                   <div>
-                    <button type="button">/\</button
-                    ><button type="button">\/</button>
+                    <button type="button">
+                      <img src="./img/chevron-left.svg" alt="Go left" />
+                    </button>
                   </div>
-                  <div><button type="button">></button></div>
+                  <div>
+                    <button type="button">
+                      <img src="./img/chevron-up.svg" alt="Go up" /></button
+                    ><button type="button">
+                      <img src="./img/chevron-down.svg" alt="Go down" />
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button">
+                      <img src="./img/chevron-right.svg" alt="Go right" />
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="zoom-control">
                 <h4>Zoom Control</h4>
                 <div class="zoom-buttons">
                   <button type="button">
-                    <img src="./img/add.svg" alt="" />
+                    <img src="./img/add.svg" alt="Zoom in" />
                   </button>
                   <button type="button">
-                    <img src="./img/minus.svg" alt="" />
+                    <img src="./img/minus.svg" alt="Zoom out" />
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="content-row-left"><h4 align="center">Links</h4></div>
+          <div class="content-row-right">
+            <h4 align="center">Viewers</h4>
+            <br />
+            <ul>
+              <li><a href="">Open CAM 1 in VLC</a></li>
+              <li><a href="">Open CAM 1 in NEW TAB</a></li>
+              <li><a href="">Open CAM 2 in VLC</a></li>
+              <li><a href="">Open CAM 2 in NEW TAB</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer">
