@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RZ25N/P Control Panel</title>
     <link rel="shortcut icon" href="./img/favicon.ico" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,15 +17,11 @@
   <body>
     <div class="container">
       <div class="nav">
-        <h3>
-          <a href="./index.html" style="color: inherit">
-            SNC-RZ25N/P<br />Control Panel</a
-          >
-        </h3>
+        <h3>SNC-RZ25N/P<br />Control Panel</h3>
 
         <ul class="nav-list">
           <li>
-            <button type="button" id="btn_go_add_cam" class="nav-link add-cam">
+            <button type="button" class="nav-link add-cam">
               <img src="./img/add.svg" alt="Zoom in" />ADD CAM
             </button>
           </li>
@@ -62,20 +58,24 @@
 
           <div class="content-row-center">
             <div class="image-viewer">
-              <img src="./img/nosignal.jpg" alt="Cam viewer" />
+              <!--<img src="./img/nosignal.jpg" alt="Cam viewer" />-->
+              <img src="http://192.168.0.101/mjpeg" alt="Cam viewer" />
             </div>
             <div class="select-view-control">
               <div>
                 <span>View</span>
-                <select name="" id="" disabled>
-                  <option value="">Select</option>
+                <select name="" id="">
+                  <option value="">All</option>
+                  <option value="">Camera PALCO</option>
+                  <option value="">Camera LADO</option>
                 </select>
               </div>
               <div class="select-view-control-spacer"></div>
               <div>
                 <span>Control</span>
-                <select name="" id="" disabled>
-                  <option value="">Select</option>
+                <select name="" id="">
+                  <option value="">Camera PALCO</option>
+                  <option value="">Camera LADO</option>
                 </select>
               </div>
             </div>
@@ -134,63 +134,42 @@
             <h4>Cameras</h4>
 
             <ul>
-              <i>No cameras</i>
+              <li>
+                Camera PALCO - 192.168.0.100
+                <a href=""><img src="./img/trash.svg" alt="" /></a>
+              </li>
+              <li>
+                Camera LADO - 192.168.0.101
+                <a href=""><img src="./img/trash.svg" alt="" /></a>
+              </li>
             </ul>
-
             <br />
-
             <h4>Viewers</h4>
 
             <ul>
-              <i>No cameras</i>
+              <li>
+                <a href=""
+                  >Open CAM 1 in VLC <img src="./img/cone_striped.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  >Open CAM 1 in NEW TAB
+                  <img src="./img/square-plus.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  >Open CAM 2 in VLC <img src="./img/cone_striped.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  >Open CAM 2 in NEW TAB
+                  <img src="./img/square-plus.svg" alt=""
+                /></a>
+              </li>
             </ul>
-
-            <br />
-
-            <h4>Tips</h4>
-
-            <table>
-              <tbody>
-                <tr>
-                  <td><img src="./img/keyboard-up.png" width="18" alt="" /></td>
-                  <td>Tilt camera up</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/keyboard-down.png" width="18" alt="" />
-                  </td>
-                  <td>Tilt camera down</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/keyboard-right.png" width="18" alt="" />
-                  </td>
-                  <td>Tilt camera right</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/keyboard-left.png" width="18" alt="" />
-                  </td>
-                  <td>Tilt camera left</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/keyboard-plus.svg" width="18" alt="" />
-                  </td>
-                  <td>Zoom in</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/keyboard-minus.png" width="18" alt="" />
-                  </td>
-                  <td>Zoom out</td>
-                </tr>
-                <tr>
-                  <td><img src="./img/keyboard-s.svg" width="18" alt="" /></td>
-                  <td>Stop movement/zoom</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>

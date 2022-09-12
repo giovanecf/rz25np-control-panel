@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RZ25N/P Control Panel</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/add_camera.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h3>
+          <a href="../index.html" style="color: inherit">
+            SNC-RZ25N/P<br />Control Panel</a
+          >
+        </h3>
+
+        <ul class="nav-list">
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="content-row">
+          <div class="content-row-left"></div>
+
+          <div class="content-row-center">
+            <h4>ADD A NEW CAMERA</h4>
+
+            <div class="form-input">
+              <span>Name</span>
+              <input type="text" id="input_name" placeholder="Type a name" />
+            </div>
+            <div class="form-input">
+              <span>IP</span>
+              <input type="text" id="input_ip" placeholder="Type the IP" />
+            </div>
+            <div class="form-input">
+              <button type="button" id="btn_add_cam">Save camera</button>
+            </div>
+          </div>
+          <div class="content-row-right"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>SNC-RZ25N/P | 2022</p>
+      </div>
+    </div>
+    <script src="../js/axios.js"></script>
+    <script src="../js/add_camera.js"></script>
+  </body>
+</html>

@@ -56,7 +56,6 @@ button {
   background: var(--gray);
   border: 0;
   border-radius: 0.25rem;
-  font-size: 2.5rem;
   font-weight: bold;
 
   margin: 0.5rem;
@@ -94,6 +93,14 @@ select {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+select:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+.spacer {
+  margin: 0 1rem;
 }
 
 .container {
@@ -175,12 +182,9 @@ select {
 
 .image-viewer {
   flex: 1;
-
-  width: 100%;
-  height: 100%;
 }
 .image-viewer > img {
-  max-width: 50% !important;
+  max-width: 100% !important;
 }
 
 .select-view-control {
@@ -320,6 +324,9 @@ select {
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
+}
+.content-row-right > ul > i {
+  margin: 0.5rem 1rem;
 }
 .content-row-right > ul > li {
   margin: 0.5rem 1rem;
