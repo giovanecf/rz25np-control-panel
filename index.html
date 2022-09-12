@@ -21,14 +21,9 @@
 
         <ul class="nav-list">
           <li>
-            <a href="" class="nav-link add-cam"
-              ><img src="./img/add_green.svg" alt="" /> ADD CAM</a
-            >
-          </li>
-          <li>
-            <a href="" class="nav-link"
-              ><img src="./img/config.svg" alt="Config link"
-            /></a>
+            <button type="button" class="nav-link add-cam">
+              <img src="./img/add.svg" alt="Zoom in" />ADD CAM
+            </button>
           </li>
         </ul>
       </div>
@@ -36,8 +31,7 @@
       <div class="content">
         <div class="content-row">
           <div class="content-row-left">
-            <h4>SPEED CONTROL</h4>
-            <br />
+            <h4>Speed Control</h4>
             <div class="measure-group">
               <div class="measure">
                 <h5>Movement Speed</h5>
@@ -64,7 +58,26 @@
 
           <div class="content-row-center">
             <div class="image-viewer">
-              <img src="./img/nosignal.jpg" alt="Cam viewer" />
+              <!--<img src="./img/nosignal.jpg" alt="Cam viewer" />-->
+              <img src="http://192.168.0.101/mjpeg" alt="Cam viewer" />
+            </div>
+            <div class="select-view-control">
+              <div>
+                <span>View</span>
+                <select name="" id="">
+                  <option value="">All</option>
+                  <option value="">Camera PALCO</option>
+                  <option value="">Camera LADO</option>
+                </select>
+              </div>
+              <div class="select-view-control-spacer"></div>
+              <div>
+                <span>Control</span>
+                <select name="" id="">
+                  <option value="">Camera PALCO</option>
+                  <option value="">Camera LADO</option>
+                </select>
+              </div>
             </div>
             <div class="main-controls">
               <div class="pre-positions">
@@ -118,13 +131,44 @@
             </div>
           </div>
           <div class="content-row-right">
-            <h4 align="center">Viewers</h4>
-            <br />
+            <h4>Cameras</h4>
+
             <ul>
-              <li><a href="">Open CAM 1 in VLC</a></li>
-              <li><a href="">Open CAM 1 in NEW TAB</a></li>
-              <li><a href="">Open CAM 2 in VLC</a></li>
-              <li><a href="">Open CAM 2 in NEW TAB</a></li>
+              <li>
+                Camera PALCO - 192.168.0.100
+                <a href=""><img src="./img/trash.svg" alt="" /></a>
+              </li>
+              <li>
+                Camera LADO - 192.168.0.101
+                <a href=""><img src="./img/trash.svg" alt="" /></a>
+              </li>
+            </ul>
+            <br />
+            <h4>Viewers</h4>
+
+            <ul>
+              <li>
+                <a href=""
+                  >Open CAM 1 in VLC <img src="./img/cone_striped.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  >Open CAM 1 in NEW TAB
+                  <img src="./img/square-plus.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  >Open CAM 2 in VLC <img src="./img/cone_striped.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  >Open CAM 2 in NEW TAB
+                  <img src="./img/square-plus.svg" alt=""
+                /></a>
+              </li>
             </ul>
           </div>
         </div>
